@@ -1,5 +1,6 @@
 # PA04-Health-Insurance-Cross-Sell
-## STATUS DO PROJETO: EM CONSTRUÇÃO
+
+![Imagem_Insurance_Car](https://user-images.githubusercontent.com/94136773/156264357-a7b4bc53-5c55-48ec-bd20-7ebd681a9b1e.jpg)
 
 ## Contexto
 ### Projeto de Classificação quanto a propensão de Vendas de uma Seguradora.
@@ -101,17 +102,17 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 |  40000 |  80.84 | 12320 |
 |  39192 |  80.00 | 12192 |
 
-### Planilha Google Sheets colocada em produção:
+### Planilha Google Sheets colocada em produção
 
 - Na imagem a baixo, tem um exemplo da tabela feita na plataforma Google Sheets, onde colocando a lista de clientes, conseguimos fazer a predição de score de cada cliente e classificarmos segundo o score predito pelo modelo. 
 
 ![Tabela_Predicao_Score](https://user-images.githubusercontent.com/94136773/156259601-7aba2ecf-bee4-4897-bba4-0983d4490751.jpg)
 
 
-## 5. Resultados financeiros para o negócio:
+## 5. Resultados financeiros para o negócio
 
 - Para fazermos estimativas financeiras que poderá ser gerado ao implementar o modelo, utilizamos as seguintes premissas:
-- 
+ 
 <b>1.</b> Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas nas lista de clientes que será utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
 
 <b>2.</b>  Todos os clientes interessados que forem contatados irão contratar o modelo.
@@ -124,7 +125,23 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 |  20000 |  4819 | 301.29 |7.228.500,00|
 |  40000 |  5107  | 127.80 |7.660.500,00|
 
+## 6. Conclusão:
 
+O objetivo final foi alcançado, o modelo final conseguiu obter resultados estimados de até 300% para alcançar clientes interessados quando feito para selecionar 20.000 ligações e 127% ao dobrar as ligações para 40.000 ligações.
+As estimativas econômicas tiveram uma crescente consideravel também. 
+O modelo ficará em produção e poderá ser utilizado para novas listas de clientes para possíveis novas captação clientes pelo time de vendas. 
+
+## 7. Próximos Passos:
+
+- Coletar feedbacks sobre a Usabilidade afim de implementar melhorias. 
+- Testar novas features, criando features derivadas e testar melhora de performance a partir destas.  
+- Testar novos modelos de Machine Learn e diferente encoders nas features para tentar melhorar a performance. 
+ 
+## 8. Referências:
+
+- Dataset usado do [Kaggle](https://www.kaggle.com/anmolkumar/health-insurance-cross-sell-prediction)
+- Este projeto foi realizado durante o curso 'DS em Produção', [Comunidade DS](https://www.comunidadedatascience.com/ds-em-producao/)
+- Imagem utilizada é de uso livre no site [pixabay](https://pixabay.com/pt/illustrations)
 
 
 
