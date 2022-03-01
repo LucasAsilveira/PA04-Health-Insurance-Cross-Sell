@@ -53,3 +53,25 @@ Será desenvolvido de a cordo com o pedido e necessidade do cliente as seguintes
 
 ### 2.3. Processo 
 
+- Coleta de Dados: Através conexão com banco de dados Postgress hospedado numa clound da AWS.
+- Limpeza dos Dados: Organizar e Renomear colunas, descrever os tipos, dimensão, checar dados faltantes e Realizar Descrição estatística, criar hipóteses de negócio criando novas variáveis para exploração destas adiante.
+- Exploração dos dados: Fazer análise gráfica das variáveis, validar as hipóteses levantadas.
+- Modelagem dos dados: Transformação das variáveis fazendo ajuste de escala e fazendo as transformações necessárias para podermos usar o algoritmos de Machine Learning da melhor forma. Usaremos o Boruta junto com a analise das hipóteses para escolher as variáveis para o modelo final.
+- Avaliação do Algoritmo: Será feita ordenação dos dados conforme score de propensão de predito pelo modelo. Avaliando gráfico curva de ganho e lift destes dados ordenados assim como metodo de Precisão e Recall Top k. 
+- Modelo em Produção: Colocar o  modelo no Heroku para hospedá-lo e ficar sempre disponível para acesso, onde será elaborada tabela google sheets para realizar ordenação dos clientes. 
+
+## 3. Principais Insights dos Dados
+
+1. Clientes em faxa etárias de idade maior possuem mais interesse pelo seguro.(FALSO)
+- Insight Gerado: A faxa etária de maior interesse é de 42 a 52 anos. Sendo que na faixa de 30 a 40 também os clientes demosntraram mais interesse. Caindo bastante o interesse nas faixas mais baixas de idade e um pouco nas faixas mais altas.
+
+2. Clientes com automóveis mais novos e não possuem seguro de automóvel tem mais interesse pelo seguro.(FALSO)
+- Insight Gerado: Na verdade clientes com automóveis mais velhos e que não possuem seguros tem mais interesse.
+
+3. Clientes com automóveis que já sofreram danos, possuem mais interesse pelo seguro.(VERDADEIRO)
+- Insgith Gerado: Clientes que já tiveram danos, tem muito mais interesse pelo seguro, apesar de parecer óbvio, ,as ao analisarmos os dados vimos que tem uma diferença de interesse bem acentuada. 
+
+4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.¶(FALSO)
+- Insight Gerado: Na realidade Clientes do geênero Masculino possuem mais interesse.
+
+
