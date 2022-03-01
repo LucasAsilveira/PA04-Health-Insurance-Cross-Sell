@@ -26,7 +26,7 @@ Campanha tem limite de 20 mil ligações dentro dos 127 mil clientes selecionado
 
 ### 1.3. Solução 
 
-Será desenvolvido de a cordo com o pedido e necessidade do cliente as seguintes questões:
+Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as seguintes questões:
 
 <b>Q1.</b> Elaborar lista com os principais Insights sobre os atributos mais relevantes dos clientes interessados na aquisição do novo produto.
 
@@ -73,5 +73,37 @@ Será desenvolvido de a cordo com o pedido e necessidade do cliente as seguintes
 
 4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.¶(FALSO)
 - Insight Gerado: Na realidade Clientes do geênero Masculino possuem mais interesse.
+
+## 4. Respondendo Questões de Negócio:
+
+- Questões Levantadas pelo CEO
+
+<b>Q2.</b> Com 20.000 ligações, quantos clientes interessados iram ser alcançados?
+
+- Com 20.000 ligações serão alcançados 7213 clientes interessados. 
+- Estas 20.000 ligações representam 15.75% da base de clientes que será usada pelo time de vendas e alcançariam 47,33% dos clientes interessados.
+
+<b>Q3.</b> Com 40.000 ligações, quantos clientes interessados iram ser alcançados?
+
+- Com 40.000 ligações serão alcançados 12320 clientes interessados. 
+- Estas 40.000 ligações representam 31,5% da base de clientes que será usada pelo time de vendas e alcançariam 80.84% dos clientes interessados.
+
+<b>Q4.</b> Para alcançar 80% dos interessados quantas ligações teriam que ser feitas?
+
+- Para atingir 80% serão necessário fazer 39192 ligações.
+- Estas 39192 ligações, correspondem a 30,86% da base de clientes. 
+
+
+
+| Número Ligações |  %Interessados  | Número de Interessados |
+| ------------------- | ------------------- | ------------------- |
+|  20000 |  47.33 | 7213 |
+|  40000 |  80.84 | 12320 |
+|  39192 |  80.00 | 12192 |
+
+## 5. Resultados financeiros para o negócio:
+
+
+
 
 
