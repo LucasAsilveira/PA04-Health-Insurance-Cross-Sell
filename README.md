@@ -111,9 +111,13 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 ## 5. Resultados financeiros para o negócio:
 
 - Para fazermos estimativas financeiras que poderá ser gerado ao implementar o modelo, utilizamos as seguintes premissas:
-1. Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas nas lista de clientes que será utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
-2. Todos os clientes interessados que forem contatados irão contratar o modelo.
-3. Para comparar com o modelo usamos os resultados de um modelo que escolheria os clientes de forma aleatória para estimarmos o ganho a mais do que um aleatório.
+- 
+<b>1.</b> Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas nas lista de clientes que será utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
+
+<b>2.</b>  Todos os clientes interessados que forem contatados irão contratar o modelo.
+
+<b>3.</b>  Para comparar com o modelo usamos os resultados de um modelo que escolheria os clientes de forma aleatória para estimarmos o ganho a mais do que um aleatório.
+
 
 | Número Ligações |  Ganho  Clientes | % Ganho Performance |Ganho Financeiro(R$)|
 | ------------------- | ------------------- | ------------------- |-------------------|
