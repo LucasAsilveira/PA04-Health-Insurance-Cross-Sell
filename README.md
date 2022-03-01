@@ -76,7 +76,7 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 
 ## 4. Respondendo Questões de Negócio:
 
-- Questões Levantadas pelo CEO
+### Questões Levantadas pelo CEO
 
 <b>Q2.</b> Com 20.000 ligações, quantos clientes interessados iram ser alcançados?
 
@@ -101,7 +101,24 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 |  40000 |  80.84 | 12320 |
 |  39192 |  80.00 | 12192 |
 
+### Planilha Google Sheets colocada em produção:
+
+- Na imagem a baixo, tem um exemplo da tabela feita na plataforma Google Sheets, onde colocando a lista de clientes, conseguimos fazer a predição de score de cada cliente e classificarmos segundo o score predito pelo modelo. 
+
+![Tabela_Predicao_Score](https://user-images.githubusercontent.com/94136773/156259601-7aba2ecf-bee4-4897-bba4-0983d4490751.jpg)
+
+
 ## 5. Resultados financeiros para o negócio:
+
+- Para fazermos estimativas financeiras que poderá ser gerado ao implementar o modelo, utilizamos as seguintes premissas:
+1. Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas nas lista de clientes que será utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
+2. Todos os clientes interessados que forem contatados irão contratar o modelo.
+3. Para comparar com o modelo usamos os resultados de um modelo que escolheria os clientes de forma aleatória para estimarmos o ganho a mais do que um aleatório.
+
+| Número Ligações |  Ganho  Clientes | % Ganho Performance |Ganho Financeiro(R$)|
+| ------------------- | ------------------- | ------------------- |-------------------|
+|  20000 |  4819 | 301.29 |7.228.500,00|
+|  40000 |  5107  | 127.80 |7.660.500,00|
 
 
 
