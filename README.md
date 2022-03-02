@@ -72,7 +72,7 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 3. Clientes com automóveis que já sofreram danos, possuem mais interesse pelo seguro.(VERDADEIRO)
 - Insgith Gerado: Clientes que já tiveram danos, tem muito mais interesse pelo seguro, apesar de parecer óbvio, ,as ao analisarmos os dados vimos que tem uma diferença de interesse bem acentuada. 
 
-4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.¶(FALSO)
+4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.(FALSO)
 - Insight Gerado: Na realidade Clientes do geênero Masculino possuem mais interesse.
 
 ## 4. Respondendo Questões de Negócio:
