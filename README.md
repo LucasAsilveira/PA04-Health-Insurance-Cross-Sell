@@ -46,7 +46,7 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 
 - Python 3.8;
 - Jupyter Notebook;
-- Panda Enviroment;
+- Biblioteca Pandas ;
 - Git e Github;
 - Heroku;
 - Flask e python API's
@@ -73,7 +73,7 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 - Insgith Gerado: Clientes que já tiveram danos, tem muito mais interesse pelo seguro, apesar de parecer óbvio, ,as ao analisarmos os dados vimos que tem uma diferença de interesse bem acentuada. 
 
 4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.(FALSO)
-- Insight Gerado: Na realidade Clientes do geênero Masculino possuem mais interesse.
+- Insight Gerado: Na realidade Clientes do gênero Masculino possuem mais interesse.
 
 ## 4. Respondendo Questões de Negócio:
 
@@ -113,9 +113,9 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 
 - Para fazermos estimativas financeiras que poderá ser gerado ao implementar o modelo, utilizamos as seguintes premissas:
  
-<b>1.</b> Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas nas lista de clientes que será utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
+<b>1.</b> Os cálculos foram realizados partindo da premissa que a proporção de pessoas interessadas na lista de clientes utilizada pelo setor de vendas se manterá a mesma da base utilizada para treinar o modelo.
 
-<b>2.</b>  Todos os clientes interessados que forem contatados irão contratar o modelo.
+<b>2.</b>  Todos os clientes interessados que forem contatados irão contratar o seguro.
 
 <b>3.</b>  Para comparar com o modelo usamos os resultados de um modelo que escolheria os clientes de forma aleatória para estimarmos o ganho a mais do que um aleatório.
 
