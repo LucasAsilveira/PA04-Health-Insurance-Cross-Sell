@@ -75,7 +75,37 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 4.  Clientes do gênero feminino possuem proporcionalmente, mais interesse pelo seguro.(FALSO)
 - Insight Gerado: Na realidade Clientes do gênero Masculino possuem mais interesse.
 
-## 4. Respondendo Questões de Negócio:
+## 4. Modelo de Machine Learning
+
+ <b> Modelos testados:</b>
+  
+Para desenvolver o modelo de Machine Learning a ser usado no projeto, inicialmente foi testado o desempenho de alguns algortmos de Machine Learn para podemos selecionar o de melhor desempenho para o nosso problema. Para medir o desempenho cada modelo foi treinado com dados de treino(80%) e teste(20%), foi feito uma ordenação em formato de lista com o resultado de propensão de venda de cada cliente, as métricas usadas para medir este desempenho foram: Precision Top K e Recall Top K. 
+
+- Precision top k: Conta quantas predições foram corretas até k e dividi por todas as predições realizada pelo modelo até k. Onde k  é o número de elementos testatados. <b>Tabela com resultados dos modelos para métrica Precision top k:</b>
+
+![image](https://user-images.githubusercontent.com/94136773/158162036-9f50ac1e-6236-404e-b9b7-b60742934e9c.png)
+
+
+- Recall Top K: Conta quantas predições foram corretas até k e dividi por todos os exemplos verdadeiros.
+<b>Tabela com resultados dos modelos para métrica Recall top k:</b>
+
+![image](https://user-images.githubusercontent.com/94136773/158162300-c6dc3517-1498-42ca-82d3-ff387a22c552.png)
+
+<b> Analisando Resultados:</b> Com base nos resultados, conseguimos ter desempenhos muito semelhantes para os algoritmos Random Forest e o Xgboost Classifier, sendo que o primeiro desempenhou um pouco melhor para números maiores de k, enquanto o segundo obterve melhores resultados para números menores de k. Levando em consideração que o número de telefonemas que será usado na base é de 20000 para 127000 ligações, ou seja em torno de 15% dos dados, foid ecidido seguir com o Xboost Classifier que desempenhou melhor para esta proporção dos dados alem de ser um modelo mais leve que o Random Forest. 
+
+#### Modelos Final(Xboost Classifier): 
+ Após ser definido o algoritmo de ML a ser usado, foi feito um ajuste fino dos hyperparâmetros do modelo para melhorar seu desempenho, a técnica usada foi Random Search, técnica de uso rápido e simples, onde definimos alguns valores a ser testados para os principais parâmetros, rodando o algoritmo na base de dados diversas vezes de forma randômica e medindo o seu desempenho para definir os melhores parâmetros a serem usados. 
+ <b>Com os parâmetros ajustados tivemos os modelo final definido, a baixo a curvas de ganho e de lift obtidas:</b>
+ 
+ ![image](https://user-images.githubusercontent.com/94136773/158164534-dc97bd54-0191-419a-b1be-d7d3cd1a91c9.png)
+
+ <b>Tabela com resultados do modelo final das métrica Precision e Recall top k:</b>
+  
+ ![image](https://user-images.githubusercontent.com/94136773/158164937-ac341933-3995-47a6-897d-50e1090bace1.png)
+
+ Obtivemos uma melhora com relação ao modelo não ajustado usando o k de 15% e 30% de 2.1% e 1.27% respectivamente. 
+ 
+## 5. Respondendo Questões de Negócio:
 
 ### Questões Levantadas pelo CEO
 
@@ -106,37 +136,7 @@ Será desenvolvido de a cordo com o pedido e necessidade levantadas pelo CEO as 
 
 - Na imagem a baixo, tem um exemplo da tabela feita na plataforma Google Sheets, onde colocando a lista de clientes, conseguimos fazer a predição de score de cada cliente e classificarmos segundo o score predito pelo modelo. <b> Uma tabela teste, com 1000 dados onde foi realizado uma predição para teste pode ser acessada clicando no [LINK](https://docs.google.com/spreadsheets/d/e/2PACX-1vSEdUJ5gYjwt1K9arIASQ5ufINOx0hrEsCnB_r8N4PTsGIoxwvB-n0kd3AQUU7545a3uzArOhbnU4hV/pubhtml?gid=0&single=true)</b>
 
-![Tabela_Predicao_Score](https://user-images.githubusercontent.com/94136773/156259601-7aba2ecf-bee4-4897-bba4-0983d4490751.jpg)
-
-## 5. Modelo de Machine Learning
-
- <b> Modelos testados:</b>
-  
-Para desenvolver o modelo de Machine Learning a ser usado no projeto, inicialmente foi testado o desempenho de alguns algortmos de Machine Learn para podemos selecionar o de melhor desempenho para o nosso problema. Para medir o desempenho cada modelo foi treinado com dados de treino(80%) e teste(20%), foi feito uma ordenação em formato de lista com o resultado de propensão de venda de cada cliente, as métricas usadas para medir este desempenho foram: Precision Top K e Recall Top K. 
-
-- Precision top k: Conta quantas predições foram corretas até k e dividi por todas as predições realizada pelo modelo até k. Onde k  é o número de elementos testatados. <b>Tabela com resultados dos modelos para métrica Precision top k:</b>
-
-![image](https://user-images.githubusercontent.com/94136773/158162036-9f50ac1e-6236-404e-b9b7-b60742934e9c.png)
-
-
-- Recall Top K: Conta quantas predições foram corretas até k e dividi por todos os exemplos verdadeiros.
-<b>Tabela com resultados dos modelos para métrica Recall top k:</b>
-
-![image](https://user-images.githubusercontent.com/94136773/158162300-c6dc3517-1498-42ca-82d3-ff387a22c552.png)
-
-<b> Analisando Resultados:</b> Com base nos resultados, conseguimos ter desempenhos muito semelhantes para os algoritmos Random Forest e o Xgboost Classifier, sendo que o primeiro desempenhou um pouco melhor para números maiores de k, enquanto o segundo obterve melhores resultados para números menores de k. Levando em consideração que o número de telefonemas que será usado na base é de 20000 para 127000 ligações, ou seja em torno de 15% dos dados, foid ecidido seguir com o Xboost Classifier que desempenhou melhor para esta proporção dos dados alem de ser um modelo mais leve que o Random Forest. 
-
-#### Modelos Final(Xboost Classifier): 
- Após ser definido o algoritmo de ML a ser usado, foi feito um ajuste fino dos hyperparâmetros do modelo para melhorar seu desempenho, a técnica usada foi Random Search, técnica de uso rápido e simples, onde definimos alguns valores a ser testados para os principais parâmetros, rodando o algoritmo na base de dados diversas vezes de forma randômica e medindo o seu desempenho para definir os melhores parâmetros a serem usados. 
- <b>Com os parâmetros ajustados tivemos os modelo final definido, a baixo a curvas de ganho e de lift obtidas:</b>
- 
- ![image](https://user-images.githubusercontent.com/94136773/158164534-dc97bd54-0191-419a-b1be-d7d3cd1a91c9.png)
-
- <b>Tabela com resultados do modelo final das métrica Precision e Recall top k:</b>
-  
- ![image](https://user-images.githubusercontent.com/94136773/158164937-ac341933-3995-47a6-897d-50e1090bace1.png)
-
- Obtivemos uma melhora com relação ao modelo não ajustado usando o k de 15% e 30% de 2.1% e 1.27% respectivamente. 
+![Tabela_Predicao_Score](https://user-images.githubusercontent.com/94136773/156259601-7aba2ecf-bee4-4897-bba4-0983d4490751.jpg) 
  
 ## 6. Resultados financeiros para o negócio
 
